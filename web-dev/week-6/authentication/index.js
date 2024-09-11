@@ -28,8 +28,24 @@ function findUser(username, password) {
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-    res.send("hello there")
+app.get("/me", (req, res) => {
+    const token = req.headers.token;
+    let foundUser = null;
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].token === token) {
+            foundUser = users[i];
+        }
+        if (foundUser) {
+            res.json({
+                username: foundUser.username,
+                password: foundUser.password
+            });
+        } else {
+            res.status(400).json({
+                message: "Invalid token"
+            });
+        }
+    }
 })
 
 app.post("/signup", function (req, res) {
