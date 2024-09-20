@@ -1,0 +1,26 @@
+body {
+    font-size: 20px;
+    padding: 10px;
+    max-width: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+legend {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: black;
+    color: #fff;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+}
