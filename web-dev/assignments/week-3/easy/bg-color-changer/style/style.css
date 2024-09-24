@@ -1,0 +1,48 @@
+
+body {
+    height: 100%;
+    margin: 0;
+   
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container button {
+    padding: 10px;
+    font-size: 16px;
+    min-width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fefefe;
+
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+    color: #000;
+}
+#color-value{
+    width: 270px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#random {
+    background: #2c3e50;
+    background: -webkit-linear-gradient(to right, #fefefe, #fd746c);
+    background: linear-gradient(to right, #e47d7d, #7b71e7);
+}
